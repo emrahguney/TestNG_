@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MySuite" parallel="tests" thread-count="2" >
+ <!--   <parameter name="aranacakKelime" value="mac"></parameter> alttaki ayni parametreleri silip yukarda yazabilirsin       -->
+    <test name="myTest1">
+        <parameter name="aranacakKelime" value="mac"> </parameter>
+        <parameter name="browserTipi" value="firefox"> </parameter>
+
+
+        <classes>
+
+            <class name="Gun05._01_SearchFunctionality"> </class>
+
+        </classes>
+    </test>
+
+    <test name="myTest2" >
+        <parameter name="aranacakKelime" value="iphone"> </parameter>
+        <parameter name="browserTipi" value="chrome"> </parameter>
+
+
+        <classes>
+
+            <class name="Gun05._01_SearchFunctionality"> </class>
+
+        </classes>
+    </test>
+</suite>

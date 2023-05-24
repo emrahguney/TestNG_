@@ -1,0 +1,30 @@
+"Implicit wait", Selenium web sürücüsü tarafından sunulan bir özelliktir.
+Bu özellik, bir web sayfasının yüklenmesi veya belirli bir işlemin tamamlanması için belirli bir süre beklemeyi sağlar.
+Bu bekleme süresi, web sayfasındaki öğelerin yüklenmesi için gereken zamanı veya bir işlemin tamamlanması için gereken zamanı belirlemek için kullanılır.
+Örneğin, bir Selenium test senaryosunda, bir öğenin tıklanması sonrasında bir sayfa yüklenmesi gerekiyorsa,
+implicit wait kullanılabilir. Bu, Selenium web sürücüsünün belirtilen süre boyunca sayfanın yüklenmesini bekleyeceği anlamına gelir.
+Eğer sayfa belirtilen süre içinde yüklenmezse, Selenium bir hata verir.
+Implicit wait kullanmak, test senaryolarının daha güvenilir olmasını sağlayabilir,
+çünkü öğelerin yüklenmesini beklemek yerine belirli bir süre beklemek,
+öğelerin yüklenmesi için gereken süreyi hesaba katar. Bu da test senaryolarının daha az hata vermesini sağlayabilir.
+**********************************************************************************************************************************
+"Explicit wait", Selenium web sürücüsünün bir diğer özelliğidir ve implicit wait ile benzerdir
+ ancak biraz daha farklı çalışır. Implicit wait, belirli bir süre boyunca web sayfasının yüklenmesini veya
+ belirli bir işlemin tamamlanmasını beklerken, explicit wait, belirli bir koşulu karşılanana kadar bekler.
+Explicit wait, Selenium web sürücüsünün, belirli bir koşul gerçekleşene kadar beklemesini sağlayan bir yöntemdir.
+ Örneğin, bir test senaryosunda bir sayfada bir öğe gözükene kadar beklemek isteyebilirsiniz.
+ Bu durumda, explicit wait yöntemi kullanılabilir. Selenium, belirli bir süre boyunca sayfayı kontrol eder ve belirtilen koşul gerçekleştiği anda işleme devam eder.
+Explicit wait'in kullanımı, test senaryolarının daha etkili hale gelmesine yardımcı olur
+çünkü test senaryoları, belirli bir koşul gerçekleştiğinde çalışmaya devam ederler.
+Bu, test senaryolarının daha hızlı ve daha az hata vermesini sağlar.
+ Ayrıca, implicit wait ile karşılaştırıldığında daha esnek bir beklemeyi sağlar, çünkü belirli bir koşul gerçekleşene kadar bekleyebilirsiniz.
+
+
+ //state.selectByVisibleText("Ankara");
+         //state.selectByValue("3321");
+         state.selectByIndex(7);
+         // stale element hatası : tez buldum erken kaybettim
+
+         //selectByVisibleText, selectByValue : findElement gibi çalıştığından
+         //                                     implictly wait i kullanır.
+         // selectByIndex : implicitlyWait ie çalışMIYOR. ancak ExplicitWait ile çalışır

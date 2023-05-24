@@ -1,0 +1,10 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite"> <!--TUM TESTLERI KAPSAYAN BOLUM -->
+    <test  name="test1"> <!--TEST 1 I KAPSAYAN BOLUM -->
+        <classes><!--CALISCAK CLASSLARIN YAZILDIGI BOLUM -->
+            <class name="Gun04._01_Intro">
+            </class>
+        </classes>
+    </test>
+</suite>

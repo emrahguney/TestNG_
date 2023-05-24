@@ -1,0 +1,25 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+    <test  name="test1">
+<groups>
+    <run>
+        <include name="SmokeTest"> </include>
+        <!--include groups namedeki yazilanlari icerenleri yazdirir. exclude ise yazdigimiz name in disinda kalanlari yazdirir -->
+
+    </run>
+</groups>
+
+        <!--caliscak classlarin yazildigi bolum -->
+        <classes>
+            <class name="Gun04._03_Groups"> </class>
+
+        </classes>
+
+
+    </test>
+
+
+</suite>
